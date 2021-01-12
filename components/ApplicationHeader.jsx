@@ -4,7 +4,7 @@ import { Appbar } from 'react-native-paper'
 import { useSelector } from 'react-redux'
 
 const ApplicationHeader = () => {
-  const { appTitle } = () => {state => state}
+  const { appTitle } = () => useSelector(state => state)
   return (
     <Appbar.Header>
       <Appbar.Content title={appTitle} />
